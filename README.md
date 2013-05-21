@@ -1,0 +1,1 @@
+`npm instal -g lineman`
