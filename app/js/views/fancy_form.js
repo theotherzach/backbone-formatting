@@ -4,7 +4,8 @@ window.app.views.BodyView = Backbone.View.extend({
     "click #app-submit":  "save",
   },
   save: function () {
-    var lineItem = $('#line-item').val()
-    this.model.saveWithFormat(lineItem)
+    var lineItem = $('#line-item').val();
+    this.model.saveWithFormat(lineItem);
+    $('#result').html(this.model.getValue());
   }
 });
